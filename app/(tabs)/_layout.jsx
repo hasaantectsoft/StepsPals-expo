@@ -74,6 +74,7 @@ const TabLayout = () => {
       <Tabs.Screen name="GraveYard" options={{ headerShown: false }} />
       <Tabs.Screen name="Statistic" options={{ headerShown: false }} />
       <Tabs.Screen name="Ranking" options={{ headerShown: false }} />
+
     </Tabs>
   );
 };

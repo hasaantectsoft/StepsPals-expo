@@ -55,6 +55,7 @@ export default function RootLayout() {
         {/* <Stack.Screen name="GoogleSettings" /> */}
         {/* <Stack.Screen name="SpriteLoader"/> */}
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="Petmenu" options={{ headerShown: false }} />
         {/* {isLoggedIn ? (
           <Stack.Screen name="(tabs)" />
         ) : (

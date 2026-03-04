@@ -3,6 +3,7 @@ import {
   Dimensions,
   Image,
   ImageBackground,
+  Pressable,
   StyleSheet,
   Text,
   View,
@@ -44,7 +45,7 @@ const Home = () => {
             aspectRatio: 1196 / 306,
             top: IS_SMALL_SCREEN ? 25 : 48,
             left: 10,
-            backgroundColor: "green",
+            // backgroundColor: "green",
           }}
           resizeMode="contain"
         >
@@ -92,10 +93,14 @@ const Home = () => {
           />
         </PressableAnimated>
 
-        <View style={styles.nameContainer}>
+         <View style={styles.nameContainer}>
+                 <Pressable onPress={() => router.push("/Petmenu")}>
+
           <Text style={styles.labelFont}>{Name}</Text>
           <Text style={styles.nameFont}>is happy</Text>
+           </Pressable>
         </View>
+      
       </View>
 
       <DinoIdleAtlas />

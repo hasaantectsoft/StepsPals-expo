@@ -32,7 +32,7 @@ export const PixelButton = ({ label, onPress }) => {
 
   return (
     <BouncyPressable onPress={onPress} style={styles.buttonContainer}>
-      <ButtonSvg width={BUTTON_WIDTH} height={BUTTON_HEIGHT} />
+        <ButtonSvg width={BUTTON_WIDTH} height={BUTTON_HEIGHT} />
       <View style={styles.textOverlay}>
         {imgSelect && <Image source={imgSelect} style={styles.logo} />}
         <Text style={styles.buttonText}>{label}</Text>
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
   logo: {
     width: isSmallScreen ? 16 : 20,
     height: isSmallScreen ? 16 : 20,
+    
   },
   textOverlay: {
     position: "absolute",

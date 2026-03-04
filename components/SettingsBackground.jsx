@@ -1,10 +1,10 @@
 import { ImageBackground, StyleSheet } from "react-native";
 
-export default function Background({ path }) {
+export default function Background({ path,background }) {
   return (
     <ImageBackground
       source={path}
-      style={styles.background}
+      style={[styles.background, { backgroundColor: background || "transparent" }]}
       resizeMode="stretch"
       // resizeMode="cover"
     />
